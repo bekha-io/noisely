@@ -94,3 +94,9 @@ Querying schemas can be done specifying either:
 - Generation parameters
 - Metadata about generation process
 - Generated data points
+
+#### Querying
+
+Datasets are immutable - once generated, they cannot be modified or overwritten. The dataset's metadata is stored in MongoDB as a document, while the actual generated data is stored as a separate file with its URL referenced in the dataset metadata.
+
+Dataset can be exported to different formats: CSV, Excel, SQL
